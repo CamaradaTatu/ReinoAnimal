@@ -5,7 +5,7 @@ public class Animal {
 	String sexo;
 	String dataNasc;
 
-	public static int contador;
+	public static int contador = 0;
 
 	
 
@@ -26,8 +26,8 @@ public class Animal {
 		return "informações sobre o animal:\n especie:" + especie + "\n sexo:" + sexo + "\n dataNasc:" + dataNasc;
 	}
 
-	public void perfil() {
-		this.toString();
+	public String perfil() {
+		return this.toString();
 	}
 
 	private void incrementar() {

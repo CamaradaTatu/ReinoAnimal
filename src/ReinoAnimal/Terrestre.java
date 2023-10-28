@@ -22,13 +22,13 @@ public class Terrestre extends Animal {
 
 	@Override
 	public String toString() {
-		return "informações sobre o animal:\n regiao:" + regiao + "\n pelo:" + pelo + "\n especie:" + especie
-				+ "\n sexo:" + sexo + "\n dataNasc:" + dataNasc;
+		return "\n informações sobre o animal:\n regiao:" + regiao + "\n pelo:" + pelo + "\n especie:" + especie
+				+ "\n sexo:" + sexo + "\n dataNasc:" + dataNasc +"\n";
 	}
 
 	@Override
-	public void perfil() {
-		this.toString();
+	public String perfil() {
+		return this.toString();
 	}
 
 	public String getRegiao() {

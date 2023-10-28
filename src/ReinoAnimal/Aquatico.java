@@ -19,14 +19,15 @@ public class Aquatico extends Animal {
 	@Override
 	public String toString() {
 
-		return "informações sobre o animal:\n especie: " + especie + "\n sexo: " + sexo 
-				+ "\n dataNasc: " + dataNasc +"\n tipo de água: "+ tipoAgua + "\n tem escamas: " + escamas;
+		return "\n informações sobre o animal:\n especie: " + especie + "\n sexo: " + sexo 
+				+ "\n dataNasc: " + dataNasc +"\n tipo de água: "+ tipoAgua
+				+ "\n tem escamas: " + escamas + "\n";
 
 	}
 
 	@Override
-	public void perfil() {
-		this.toString();
+	public String perfil() {
+		return this.toString();
 	}
 
 	public String getTipoAgua() {

@@ -21,21 +21,21 @@ public class Aereo extends Animal {
 
 	@Override
 	public String toString() {
-		return "informações sobre o animal:\n altitude de voo:" + altitude + "\n especie:" + especie
-				+ "\n sexo:" + sexo + "\n dataNasc:" + dataNasc;
+		return "\n informações sobre o animal:\n altitude de voo:" + altitude + "\n especie:" + especie
+				+ "\n sexo:" + sexo + "\n dataNasc:" + dataNasc +"\n" ;
 	}
 
 
 
 	@Override
-	public void perfil() {
-		this.toString();
+	public String perfil() {
+		return this.toString();
 	}
 
 
 
 	String voar() {
-		return ("O animal está voando");
+		return ("O animal está voando...");
 	}
 
 
