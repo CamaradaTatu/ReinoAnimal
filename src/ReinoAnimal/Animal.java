@@ -19,8 +19,8 @@ public class Animal {
 		incrementar();
 	}
 
-	void comer() {
-		System.out.println("O animal esta comendo...");
+	String comer() {
+		return ("O Animal esta comendo...");
 	}
 
 	@Override
