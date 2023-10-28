@@ -29,4 +29,22 @@ public class Aquatico extends Animal {
 		this.toString();
 	}
 
+	public String getTipoAgua() {
+		return tipoAgua;
+	}
+
+	public void setTipoAgua(String tipoAgua) {
+		this.tipoAgua = tipoAgua;
+	}
+
+	public boolean isEscamas() {
+		return escamas;
+	}
+
+	public void setEscamas(boolean escamas) {
+		this.escamas = escamas;
+	}
+	
+	
+
 }

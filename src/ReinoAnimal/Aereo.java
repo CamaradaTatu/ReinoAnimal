@@ -37,6 +37,18 @@ public class Aereo extends Animal {
 	String voar() {
 		return ("O animal está voando");
 	}
+
+
+	public double getAltitude() {
+		return altitude;
+	}
+
+
+	public void setAltitude(double altitude) {
+		this.altitude = altitude;
+	}
+	
+	
 	
 
 }

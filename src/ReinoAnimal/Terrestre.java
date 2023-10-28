@@ -30,6 +30,22 @@ public class Terrestre extends Animal {
 	public void perfil() {
 		this.toString();
 	}
+
+	public String getRegiao() {
+		return regiao;
+	}
+
+	public void setRegiao(String regiao) {
+		this.regiao = regiao;
+	}
+
+	public boolean isPelo() {
+		return pelo;
+	}
+
+	public void setPelo(boolean pelo) {
+		this.pelo = pelo;
+	}
 	
 	
 	

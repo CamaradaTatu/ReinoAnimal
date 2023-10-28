@@ -7,9 +7,7 @@ public class Animal {
 
 	public static int contador;
 
-	public static int getContador() {
-		return contador;
-	}
+	
 
 	public Animal(String especie, String sexo, String dataNasc) {
 		super();
@@ -35,5 +33,39 @@ public class Animal {
 	private void incrementar() {
 		contador += 1;
 	}
+
+	public String getEspecie() {
+		return especie;
+	}
+
+	public void setEspecie(String especie) {
+		this.especie = especie;
+	}
+
+	public String getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+
+	public String getDataNasc() {
+		return dataNasc;
+	}
+
+	public void setDataNasc(String dataNasc) {
+		this.dataNasc = dataNasc;
+	}
+	
+	public static int getContador() {
+		return contador;
+	}
+
+	public static void setContador(int contador) {
+		Animal.contador = contador;
+	}
+	
+	
 
 }
