@@ -1,14 +1,21 @@
 package ReinoAnimal;
 
+/**
+ * Classe Animal genérica
+ * @author ruan
+ */
 public class Animal {
 	String especie;
 	String sexo;
 	String dataNasc;
 
 	public static int contador = 0;
-
-	
-
+	/**
+	 * 
+	 * @param especie espécie do animal
+	 * @param sexo sexo do animal
+	 * @param dataNasc data de nascimento do animal
+	 */
 	public Animal(String especie, String sexo, String dataNasc) {
 		super();
 		this.especie = especie;
@@ -16,8 +23,12 @@ public class Animal {
 		this.dataNasc = dataNasc;
 		incrementar();
 	}
-
-	String comer() {
+	
+	/**
+	 * método que mostra a ação do animal
+	 * @return String da ação do animal
+	 */
+	public String comer() {
 		return ("O Animal esta comendo...");
 	}
 
@@ -25,11 +36,18 @@ public class Animal {
 	public String toString() {
 		return "informações sobre o animal:\n especie:" + especie + "\n sexo:" + sexo + "\n dataNasc:" + dataNasc;
 	}
-
+	
+	/**
+	 * 
+	 * @return Informações sobre o animal
+	 */
 	public String perfil() {
 		return this.toString();
 	}
-
+	
+	/**
+	 * metódo simples, serve apenas para manter o controle de cadastro de animais
+	 */
 	private void incrementar() {
 		contador += 1;
 	}
