@@ -10,12 +10,12 @@ public class Principal {
 	
 	/**
 	 * 
-	 * @param especie espécie do animal
-	 * @param sexo sexo do animal
-	 * @param dataNasc data de nascimento do animal
-	 * @param tipoAgua tipo de água em que vive o animal
+	 * @param especie espécie do Animal
+	 * @param sexo sexo do Animal
+	 * @param dataNasc data de nascimento do Animal
+	 * @param tipoAgua tipo de água em que vive o Animal
 	 * @param escamas se tem ou não escamas
-	 * @return o animal que acabou de ser cadastrado
+	 * @return o Animal que acabou de ser cadastrado
 	 */
 	public Animal cadastrarAquatico(String especie, String sexo, String dataNasc, String tipoAgua, boolean escamas) {
 		Animal aquatico = new Aquatico(especie, sexo, dataNasc, tipoAgua, escamas);
@@ -23,12 +23,12 @@ public class Principal {
 	}
 	/**
 	 * 
-	 * @param especie espécie do animal
-	 * @param sexo sexo do animal
-	 * @param dataNasc data de nascimento do animal
-	 * @param regiao regiao de origem do animal
+	 * @param especie espécie do Animal
+	 * @param sexo sexo do Animal
+	 * @param dataNasc data de nascimento do Animal
+	 * @param regiao regiao de origem do Animal
 	 * @param pelo tem pelo ou não
-	 * @return o animal que acabou de ser cadastrado
+	 * @return o Animal que acabou de ser cadastrado
 	 */
 	public Animal cadastrarTerrestre(String especie, String sexo, String dataNasc, String regiao, boolean pelo) {
 		Animal terrestre = new Terrestre(especie, sexo, dataNasc, regiao, pelo);
@@ -36,11 +36,11 @@ public class Principal {
 	}
 	/**
 	 * 
-	 * @param especie especie do animal
-	 * @param sexo sexo do animal
-	 * @param dataNasc data de nascimento animal
+	 * @param especie especie do Animal
+	 * @param sexo sexo do Animal
+	 * @param dataNasc data de nascimento Animal
 	 * @param altitude altitude máxima em que a ave pode voar
-	 * @return o animal que acabou de ser cadastrado
+	 * @return o Animal que acabou de ser cadastrado
 	 */
 	public Animal cadastrarAereo(String especie, String sexo, String dataNasc, double altitude) {
 		Animal aereo = new Aereo(especie, sexo, dataNasc, altitude);
